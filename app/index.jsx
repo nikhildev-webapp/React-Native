@@ -6,7 +6,7 @@ import Form from './Form'
 const Home = () => {
   return (
     <View style={styles.container}>
-        <Form/>         
+              
           
     </View>
   )
