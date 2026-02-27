@@ -1,5 +1,6 @@
 import { StyleSheet, Text, TextInput, View } from 'react-native'
 import React, { useState } from 'react'
+import { Link } from 'expo-router';
 
 const Form = () => {
     const [name, setName] = useState('');
@@ -9,6 +10,7 @@ const Form = () => {
           <Text>TextInput in React Native</Text>
           <TextInput placeholder='Enter Name' value={name} onChangeText={setName} style={styles.input} />
           <Text>Hello{name}</Text>
+          <Link href={'/'}>Home</Link>
     </View>
   )
 }
